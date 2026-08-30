@@ -1,27 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yo Chill – Water-Cooled Laptop Engineering</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --accent-blue: #38bdf8;
+            --accent-hover: #0284c7;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
 
-    <title>MacBook Air Liquid Cooling | Max Hsu</title>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    <link rel="stylesheet" href="style.css">
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 2rem 1rem;
+        }
+
+        .portfolio-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 2.5rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 0.5rem;
+        }
+
+        .meta-info {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .meta-info span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border-radius: 8px;
+            padding: 1.5rem 2rem;
+            margin-bottom: 2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--accent-blue);
+            margin-bottom: 1rem;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+        }
+
+        @media (min-width: 640px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .card {
+            background-color: rgba(15, 23, 42, 0.5);
+            padding: 1rem;
+            border-radius: 6px;
+            border-left: 4px solid var(--accent-blue);
+        }
+
+        .card h3 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1rem 0;
+            font-size: 0.95rem;
+        }
+
+        th, td {
+            padding: 0.75rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        th {
+            background-color: rgba(15, 23, 42, 0.6);
+            color: var(--accent-blue);
+        }
+
+        .table-wrapper {
+            overflow-x: auto;
+        }
+
+        ul {
+            margin-left: 1.25rem;
+            margin-bottom: 1rem;
+            color: #cbd5e1;
+        }
+
+        li {
+            margin-bottom: 0.5rem;
+        }
+    </style>
 </head>
-
 <body>
 
-    <h1>MacBook Air Liquid Cooling</h1>
+<article class="portfolio-container">
+    <header>
+        <h1>Yo Chill: Water-Cooled Laptop Engineering</h1>
+        <p class="meta-info">
+            <strong>Team Members:</strong> Hsu Ching-Lun (許敬綸), Chen Po-Yan (陳柏諺), Li En-Yu (李恩宇), Wang Chi-Chun (王祈淳)<br>
+            <strong>Advisor:</strong> Prof. Wei Shih-Hsin (魏世昕教授)
+        </p>
+    </header>
 
-    <p>
-        Designed and modified a 2017 MacBook Air,
-        replacing its stock fan-based cooling system
-        with a custom liquid-cooling solution.
-    </p>
+    <section>
+        <h2>Executive Summary</h2>
+        <p>
+            <strong>Yo Chill</strong> is an engineering project focused on converting a legacy <strong>2017 MacBook Air</strong> into a portable, high-performance, water-cooled machine. 
+        </p>
+        <p>
+            Older laptops often suffer from severe thermal throttling, high fan noise, and performance limitations. Commercial external liquid-cooling laptops can cost upwards of $7,000 USD and remain too bulky for daily transport, while DIY mods usually lack portability. This project bridges the gap by integrating a custom liquid-cooling loop into a lightweight 3D-printed chassis.
+        </p>
+    </section>
 
-    <a href="index.html">← Back to Portfolio</a>
+    <section>
+        <h2>Core Objectives</h2>
+        <div class="grid-2">
+            <div class="card">
+                <h3>1. Enhanced Cooling Capacity</h3>
+                <p>Replace the stock heat sink with a higher-wattage liquid-cooling assembly.</p>
+            </div>
+            <div class="card">
+                <h3>2. Acoustic Optimization</h3>
+                <p>Maintain noise levels at ≤ 20 dB during standard operations for silent running.</p>
+            </div>
+            <div class="card">
+                <h3>3. Integrated Form Factor</h3>
+                <p>Fuse the cooling system directly into the chassis to retain true portability.</p>
+            </div>
+            <div class="card">
+                <h3>4. Technical Balance</h3>
+                <p>Optimize materials, size, and power consumption across dual operating modes.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Market & Competitor Analysis</h2>
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Metric / Feature</th>
+                        <th>Commercial (ASUS ROG GX800)</th>
+                        <th>Typical DIY Mod</th>
+                        <th>Yo Chill Target</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Price Point</strong></td>
+                        <td>~$7,000 USD</td>
+                        <td>Low Cost</td>
+                        <td>Budget DIY / Custom Fabrication</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Portability</strong></td>
+                        <td>Heavy, bulky external dock</td>
+                        <td>Loose wiring/tubing</td>
+                        <td>Integrated backplate & stand</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Aesthetics</strong></td>
+                        <td>Industrial Gaming</td>
+                        <td>Exposed / Unpolished</td>
+                        <td>Seamless 3D-printed housing</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Noise Level</strong></td>
+                        <td>Audible under full load</td>
+                        <td>Varies</td>
+                        <td>≤ 20 dB (Silent) / ≤ 35 dB (Peak)</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Technical Implementation</h2>
+        <p><strong>Digital Fabrication:</strong> Utilized 3D printing to fabricate a custom rear panel and integrated mounting stand specifically fitted to the 2017 MacBook Air form factor.</p>
+        <p><strong>Dual Operating Modes:</strong></p>
+        <ul>
+            <li><strong>Silent Mode:</strong> Fans are disabled, relying entirely on passive dissipation and coolant circulation for zero-noise productivity.</li>
+            <li><strong>Performance Mode:</strong> Low-RPM fans engage alongside the liquid loop to sustain maximum clock speeds under intense workloads.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Validation & Experimental Testing</h2>
+        <ul>
+            <li><strong>Performance Benchmark:</strong> Ran Cinebench R23 loop stress tests to evaluate sustained multi-core performance without thermal throttling downclocks.</li>
+            <li><strong>Thermal Equilibrium:</strong> Measured system temperatures every 5 seconds to target a steady-state thermal equilibrium ≤ 60°C under full load.</li>
+            <li><strong>Acoustic Profiling:</strong> Recorded noise output with a calibrated decibel meter, achieving maximum load levels of ≤ 35 dB.</li>
+        </ul>
+    </section>
+</article>
 
 </body>
-
 </html>
