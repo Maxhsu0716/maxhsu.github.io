@@ -1,142 +1,450 @@
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Yo Chill – Water-Cooled Laptop Engineering</title>
-    <link rel="stylesheet" href="style_macbook.css">
+
+```
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>MacBook Air Liquid Cooling | Max Hsu</title>
+
+<meta name="description"
+      content="A custom liquid-cooling modification of a 2017 MacBook Air by Max Hsu.">
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
+
 <body>
 
-<article class="portfolio-container">
-    <header>
-        <h1>Yo Chill: Water-Cooled Laptop Engineering</h1>
-        <p class="meta-info">
-            <strong>Team Members:</strong> Hsu Ching-Lun (許敬綸), Chen Po-Yan (陳柏諺), Li En-Yu (李恩宇), Wang Chi-Chun (王祈淳)<br>
-            <strong>Advisor:</strong> Prof. Wei Shih-Hsin (魏世昕教授)
+```
+<!-- =====================================================
+     NAVIGATION
+     ===================================================== -->
+
+<nav>
+
+    <div class="nav-container">
+
+        <a href="index.html" class="logo">
+            MAX HSU
+        </a>
+
+        <div class="nav-links">
+
+            <a href="index.html#about">
+                About
+            </a>
+
+            <a href="index.html#projects">
+                Projects
+            </a>
+
+            <a href="index.html#experience">
+                Experience
+            </a>
+
+            <a href="index.html#skills">
+                Skills
+            </a>
+
+        </div>
+
+    </div>
+
+</nav>
+
+
+<!-- =====================================================
+     PROJECT PAGE
+     ===================================================== -->
+
+<main class="project-page">
+
+
+    <!-- =================================================
+         PROJECT HEADER
+         ================================================= -->
+
+    <header class="project-page-header">
+
+        <p class="eyebrow">
+            01 · HARDWARE MODIFICATION
         </p>
+
+
+        <h1>
+            MacBook Air<br>
+            <span>Liquid Cooling</span>
+        </h1>
+
+
+        <div class="project-intro">
+
+            <p>
+                Designed and modified a 2017 MacBook Air,
+                replacing its stock fan-based cooling system
+                with a custom liquid-cooling solution.
+            </p>
+
+        </div>
+
     </header>
 
-    <section>
-        <h2>Executive Summary</h2>
-        <p>
-            <strong>Yo Chill</strong> is an engineering project focused on converting a legacy <strong>2017 MacBook Air</strong> into a portable, high-performance, water-cooled machine.
-        </p>
-        <p>
-            Older laptops often suffer from severe thermal throttling, high fan noise, and performance limitations. Commercial external liquid-cooling laptops can cost upwards of $7,000 USD and remain too bulky for daily transport, while DIY mods usually lack portability. This project bridges the gap by integrating a custom liquid-cooling loop into a lightweight 3D-printed chassis.
-        </p>
-        <div class="media-container">
-            <img src="image/Finalpic.jpg" alt="Water-Cooled MacBook Air Booting Up">
-            <span class="caption">Figure 1: Modded 2017 MacBook Air booting up with custom cooling attachments.</span>
-        </div>
-    </section>
 
-    <section>
-        <h2>Core Objectives</h2>
-        <div class="grid-2">
-            <div class="card">
-                <h3>1. Enhanced Cooling Capacity</h3>
-                <p>Replace the stock heat sink with a higher-wattage liquid-cooling assembly.</p>
-            </div>
-            <div class="card">
-                <h3>2. Acoustic Optimization</h3>
-                <p>Maintain noise levels at ≤ 20 dB during standard operations for silent running.</p>
-            </div>
-            <div class="card">
-                <h3>3. Integrated Form Factor</h3>
-                <p>Fuse the cooling system directly into the chassis to retain true portability.</p>
-            </div>
-            <div class="card">
-                <h3>4. Technical Balance</h3>
-                <p>Optimize materials, size, and power consumption across dual operating modes.</p>
-            </div>
-        </div>
-    </section>
+    <!-- =================================================
+         PROJECT METADATA
+         ================================================= -->
 
-    <section>
-        <h2>Market & Competitor Analysis</h2>
-        <div class="table-wrapper">
-            <table>
-                <thead>
-                    <tr>
-                        <th>Metric / Feature</th>
-                        <th>Commercial (ASUS ROG GX800)</th>
-                        <th>Typical DIY Mod</th>
-                        <th>Yo Chill Target</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td><strong>Price Point</strong></td>
-                        <td>~$7,000 USD</td>
-                        <td>Low Cost</td>
-                        <td>Budget DIY / Custom Fabrication</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Portability</strong></td>
-                        <td>Heavy, bulky external dock</td>
-                        <td>Loose wiring/tubing</td>
-                        <td>Integrated backplate & stand</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Aesthetics</strong></td>
-                        <td>Industrial Gaming</td>
-                        <td>Exposed / Unpolished</td>
-                        <td>Seamless 3D-printed housing</td>
-                    </tr>
-                    <tr>
-                        <td><strong>Noise Level</strong></td>
-                        <td>Audible under full load</td>
-                        <td>Varies</td>
-                        <td>≤ 20 dB (Silent) / ≤ 35 dB (Peak)</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    <div class="project-meta">
 
-    <section>
-        <h2>Technical Implementation & Digital Fabrication</h2>
-        <p><strong>Metal 3D Printing & Fabrication:</strong> Using industrial metal additive manufacturing (Tongtai AMP-160 selective laser melting equipment), we fabricated custom high-efficiency internal liquid tubing structures designed specifically for dense thermal transfer.</p>
-        
-        <div class="media-grid">
-            <div class="media-container">
-                <img src="image/metal_3Dprinter.jpg" alt="Tongtai AMP-160 Metal 3D Printer">
-                <span class="caption">Figure 2: Tongtai AMP-160 Metal 3D Printing Station.</span>
-            </div>
-            <div class="media-container">
-                <video controls>
-                    <source src="image/laser_sintering.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <span class="caption">Video 1: Selective laser melting process generating internal copper/metal channels.</span>
-            </div>
-            <div class="media-container">
-                <img src="image/Tube_final.jpg" alt="Selective Laser Sintered Cooling Plate">
-                <span class="caption">Figure 3: Completed metal-printed heat sink and internal liquid loop module.</span>
-            </div>
-            <div class="media-container">
-                <img src="image/stand_final.jpg" alt="3D Printed Laptop Stand and Chassis">
-                <span class="caption">Figure 4: Custom 3D-printed chassis backplate and integrated laptop stand.</span>
-            </div>
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                PROJECT TYPE
+            </span>
+
+            <span class="project-meta-value">
+                Personal Project
+            </span>
+
         </div>
 
-        <p><strong>Dual Operating Modes:</strong></p>
-        <ul>
-            <li><strong>Silent Mode:</strong> Fans are disabled, relying entirely on passive dissipation and coolant circulation for zero-noise productivity.</li>
-            <li><strong>Performance Mode:</strong> Low-RPM fans engage alongside the liquid loop to sustain maximum clock speeds under intense workloads.</li>
-        </ul>
+
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                CATEGORY
+            </span>
+
+            <span class="project-meta-value">
+                Hardware Modification
+            </span>
+
+        </div>
+
+
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                FOCUS
+            </span>
+
+            <span class="project-meta-value">
+                Thermal Management
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
+         HERO IMAGE
+         ================================================= -->
+
+    <div class="project-hero-image">
+
+        <img
+            src="images/mac_design_first.png"
+            alt="Custom liquid cooling modification for a 2017 MacBook Air"
+        >
+
+    </div>
+
+
+    <!-- =================================================
+         OVERVIEW
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            OVERVIEW
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <h2>
+                Rethinking the cooling system.
+            </h2>
+
+            <p>
+                This project explored the possibility of
+                replacing the stock cooling solution of a
+                2017 MacBook Air with a custom liquid-cooling
+                system.
+            </p>
+
+            <p>
+                Rather than simply using the original
+                fan-based thermal management system, I
+                investigated how a liquid-cooling solution
+                could be integrated into the compact
+                architecture of the laptop.
+            </p>
+
+        </div>
+
     </section>
 
-    <section>
-        <h2>Validation & Experimental Testing</h2>
-        <ul>
-            <li><strong>Performance Benchmark:</strong> Ran Cinebench R23 loop stress tests to evaluate sustained multi-core performance without thermal throttling downclocks.</li>
-            <li><strong>Thermal Equilibrium:</strong> Measured system temperatures every 5 seconds to target a steady-state thermal equilibrium ≤ 60°C under full load.</li>
-            <li><strong>Acoustic Profiling:</strong> Recorded noise output with a calibrated decibel meter, achieving maximum load levels of ≤ 35 dB.</li>
-        </ul>
+
+    <!-- =================================================
+         DESIGN
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            DESIGN
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <h2>
+                Designing around constraints.
+            </h2>
+
+            <p>
+                One of the biggest challenges was the
+                extremely limited internal space of the
+                MacBook Air.
+            </p>
+
+            <p>
+                Every component of the cooling system had
+                to be considered in relation to the existing
+                motherboard, chassis, battery, and other
+                internal components.
+            </p>
+
+            <p>
+                The design process focused on finding a
+                configuration that could provide effective
+                thermal transfer while remaining compatible
+                with the physical constraints of the laptop.
+            </p>
+
+        </div>
+
     </section>
-</article>
+
+
+    <!-- =================================================
+         DESIGN IMAGES
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            DESIGN PROCESS
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <p>
+                The following images document the development
+                and modification process.
+            </p>
+
+
+            <div class="project-gallery">
+
+                <img
+                    src="images/mac_design_first.png"
+                    alt="Initial MacBook Air cooling system design"
+                >
+
+                <!-- Add additional images here -->
+
+                <!--
+                <img
+                    src="images/mac_inside.jpg"
+                    alt="MacBook Air internal components"
+                >
+
+                <img
+                    src="images/liquid_loop.jpg"
+                    alt="Custom liquid cooling loop"
+                >
+
+                <img
+                    src="images/final_build.jpg"
+                    alt="Completed liquid cooling modification"
+                >
+                -->
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         IMPLEMENTATION
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            IMPLEMENTATION
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <h2>
+                Turning the design into hardware.
+            </h2>
+
+            <p>
+                After developing the cooling concept, the
+                system was physically integrated into the
+                MacBook Air.
+            </p>
+
+            <p>
+                The modification required careful handling
+                of the laptop's internal components and
+                precise placement of the cooling hardware.
+            </p>
+
+            <p>
+                This stage of the project provided hands-on
+                experience with hardware modification,
+                mechanical constraints, and thermal
+                management.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         RESULTS
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            RESULTS
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <h2>
+                What I learned.
+            </h2>
+
+            <p>
+                This project gave me a practical understanding
+                of the challenges involved in designing
+                thermal systems for compact electronics.
+            </p>
+
+            <p>
+                More importantly, it reinforced the importance
+                of designing around real-world constraints.
+                A technically effective solution still needs
+                to physically fit, interact safely with
+                existing components, and remain practical
+                to implement.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         SKILLS
+         ================================================= -->
+
+    <section class="project-detail-section">
+
+        <div class="project-detail-label">
+            SKILLS & TECHNOLOGIES
+        </div>
+
+
+        <div class="project-detail-content">
+
+            <div class="large-tags">
+
+                <span>
+                    Thermal Engineering
+                </span>
+
+                <span>
+                    Liquid Cooling
+                </span>
+
+                <span>
+                    Mechanical Design
+                </span>
+
+                <span>
+                    Hardware Modification
+                </span>
+
+                <span>
+                    Prototyping
+                </span>
+
+                <span>
+                    Thermal Management
+                </span>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================================
+         BACK TO PROJECTS
+         ================================================= -->
+
+    <div class="project-back">
+
+        <a href="index.html#projects">
+            ← Back to Projects
+        </a>
+
+    </div>
+
+
+</main>
+
+
+<!-- =====================================================
+     FOOTER
+     ===================================================== -->
+
+<footer>
+
+    <p>
+        © 2026 Max Hsu
+    </p>
+
+    <p>
+        Built with HTML & CSS
+    </p>
+
+</footer>
+```
 
 </body>
+
 </html>
