@@ -59,7 +59,7 @@ ul {
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.2em;
-    margin-bottom: 60px;
+    margin-bottom: 35px;
 }
 
 .section-label span {
@@ -69,7 +69,7 @@ ul {
 .section-title {
     font-size: clamp(2.5rem, 5vw, 5rem);
     letter-spacing: -0.05em;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 
@@ -126,7 +126,7 @@ nav {
 .section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 130px 30px;
+    padding: 80px 30px;
 }
 
 
@@ -135,10 +135,10 @@ nav {
    ========================================================= */
 
 .hero {
-    min-height: 100vh;
+    min-height: 90vh;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 160px 30px 100px;
+    padding: 130px 30px 60px;
     display: flex;
     align-items: center;
     position: relative;
@@ -166,7 +166,7 @@ nav {
     max-width: 600px;
     color: #a8adb5;
     font-size: 1.1rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 .hero-buttons {
@@ -272,8 +272,8 @@ nav {
 
 .about-grid {
     display: grid;
-    grid-template-columns: 320px 1fr;
-    gap: 60px;
+    grid-template-columns: 280px 1fr;
+    gap: 40px;
 }
 
 .about-grid h2 {
@@ -303,7 +303,7 @@ nav {
    ========================================================= */
 
 .projects-section .section-title {
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 
 .projects-grid {
@@ -426,9 +426,9 @@ nav {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 50px;
-    padding: 40px 0;
+    grid-template-columns: 160px 1fr;
+    gap: 30px;
+    padding: 28px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -467,7 +467,7 @@ nav {
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 50px;
+    gap: 35px;
 }
 
 .skill-category h3 {
@@ -504,7 +504,7 @@ nav {
 .contact-section {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 160px 30px 140px;
+    padding: 90px 30px 70px;
     text-align: center;
 }
 
@@ -520,7 +520,7 @@ nav {
 
 .contact-section p {
     max-width: 500px;
-    margin: 0 auto 45px;
+    margin: 0 auto 30px;
     color: #a8adb5;
     font-size: 1.05rem;
 }
@@ -569,14 +569,14 @@ footer {
 .project-page {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 170px 30px 120px;
+    padding: 130px 30px 80px;
 }
 
 .project-page-header {
     display: grid;
     grid-template-columns: 1fr 300px;
-    gap: 80px;
-    margin-bottom: 90px;
+    gap: 50px;
+    margin-bottom: 55px;
 }
 
 .project-page-header .eyebrow {
@@ -606,7 +606,7 @@ footer {
     grid-template-columns: repeat(3, 1fr);
     gap: 30px;
     padding: 25px 0;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
@@ -631,7 +631,7 @@ footer {
 
 .project-hero-image {
     width: 100%;
-    margin-bottom: 120px;
+    margin-bottom: 70px;
     overflow: hidden;
     background: #111419;
     border: 1px solid rgba(255, 255, 255, 0.08);
@@ -645,9 +645,9 @@ footer {
 
 .project-detail-section {
     display: grid;
-    grid-template-columns: 220px 1fr;
-    gap: 70px;
-    padding: 90px 0;
+    grid-template-columns: 200px 1fr;
+    gap: 50px;
+    padding: 55px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -708,21 +708,21 @@ footer {
    ========================================================= */
 
 .design-process {
-    padding-top: 100px;
+    padding-top: 55px;
 }
 
 .design-intro {
     max-width: 680px;
     font-size: 1.05rem;
     line-height: 1.9;
-    margin-bottom: 80px;
+    margin-bottom: 45px;
 }
 
 /* System diagram (shared wrapper) */
 
 .system-diagram {
-    margin-top: 100px;
-    padding-top: 60px;
+    margin-top: 55px;
+    padding-top: 35px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -762,7 +762,7 @@ footer {
 /* System operation */
 
 .system-operation {
-    margin-top: 110px;
+    margin-top: 55px;
 }
 
 .operation-text {
@@ -779,8 +779,8 @@ footer {
     display: grid;
     grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
     align-items: center;
-    margin-top: 65px;
-    padding: 35px 0;
+    margin-top: 40px;
+    padding: 25px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -826,7 +826,7 @@ footer {
 /* Component breakdown */
 
 .component-breakdown {
-    margin-top: 120px;
+    margin-top: 65px;
 }
 
 .component-breakdown-heading {
@@ -848,7 +848,7 @@ footer {
     display: grid;
     grid-template-columns: 60px 280px 1fr;
     gap: 30px;
-    padding: 50px 0;
+    padding: 35px 0;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     transition: border-color 0.3s ease;
 }
@@ -915,8 +915,8 @@ footer {
 /* Design -> implementation transition */
 
 .design-transition {
-    margin-top: 120px;
-    padding: 80px 0 20px;
+    margin-top: 65px;
+    padding: 45px 0 20px;
     border-top: 1px solid rgba(255, 255, 255, 0.12);
 }
 
@@ -1045,7 +1045,7 @@ footer {
     /* Homepage */
 
     .hero {
-        padding: 140px 20px 80px;
+        padding: 110px 20px 50px;
     }
 
     .hero h1 {
@@ -1053,7 +1053,7 @@ footer {
     }
 
     .section {
-        padding: 90px 20px;
+        padding: 60px 20px;
     }
 
     .projects-grid {
@@ -1066,7 +1066,7 @@ footer {
     }
 
     .contact-section {
-        padding: 120px 20px 100px;
+        padding: 70px 20px 60px;
     }
 
     .contact-links {
@@ -1076,7 +1076,7 @@ footer {
     /* Project page */
 
     .project-page {
-        padding: 140px 20px 80px;
+        padding: 110px 20px 60px;
     }
 
     .project-page-header h1 {
@@ -1088,11 +1088,11 @@ footer {
     }
 
     .project-hero-image {
-        margin-bottom: 70px;
+        margin-bottom: 45px;
     }
 
     .project-detail-section {
-        padding: 60px 0;
+        padding: 40px 0;
     }
 
     /* Exploded GIF */
@@ -1160,8 +1160,8 @@ footer {
     /* Transition */
 
     .design-transition {
-        margin-top: 80px;
-        padding-top: 60px;
+        margin-top: 45px;
+        padding-top: 35px;
     }
 
     /* Footer */
