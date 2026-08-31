@@ -951,6 +951,12 @@ nav {
         1px solid rgba(255, 255, 255, 0.1);
 }
 
+.system-diagram.exploded-view {
+    margin-top: 0;
+    padding-top: 0;
+    border-top: none;
+}
+
 .system-diagram h3 {
     color: #f1f3f5;
 
