@@ -1,38 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+```
+<meta charset="UTF-8">
 
-    <title>MacBook Air Liquid Cooling | Max Hsu</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link
-        rel="stylesheet"
-        href="style.css"
-    >
+<title>MacBook Air Liquid Cooling | Max Hsu</title>
+
+<meta name="description"
+      content="A custom liquid-cooling modification of a 2017 MacBook Air by Max Hsu.">
+
+<link rel="stylesheet" href="style.css">
+```
+
 </head>
-
 
 <body>
 
-
-<!-- =========================================================
+```
+<!-- =====================================================
      NAVIGATION
-     ========================================================= -->
+     ===================================================== -->
 
 <nav>
 
     <div class="nav-container">
 
-        <a
-            href="index.html"
-            class="logo"
-        >
+        <a href="index.html" class="logo">
             MAX HSU
         </a>
 
@@ -61,32 +59,33 @@
 </nav>
 
 
-
-<!-- =========================================================
+<!-- =====================================================
      PROJECT PAGE
-     ========================================================= -->
+     ===================================================== -->
 
 <main class="project-page">
 
 
-    <!-- =====================================================
+    <!-- =================================================
          PROJECT HEADER
-         ===================================================== -->
+         ================================================= -->
 
-    <header class="project-header">
+    <header class="project-page-header">
 
-        <div class="project-header-main">
+        <p class="eyebrow">
+            01 · HARDWARE MODIFICATION
+        </p>
 
-            <span class="eyebrow">
-                01 · HARDWARE MODIFICATION
-            </span>
 
-            <h1>
-                MacBook Air
-                <span>Liquid Cooling</span>
-            </h1>
+        <h1>
+            MacBook Air<br>
+            <span>Liquid Cooling</span>
+        </h1>
 
-            <p class="project-lead">
+
+        <div class="project-intro">
+
+            <p>
                 Designed and modified a 2017 MacBook Air,
                 replacing its stock fan-based cooling system
                 with a custom liquid-cooling solution.
@@ -94,58 +93,61 @@
 
         </div>
 
-
-        <div class="project-info">
-
-            <div class="info-item">
-
-                <span>
-                    PROJECT TYPE
-                </span>
-
-                <strong>
-                    Personal Project
-                </strong>
-
-            </div>
-
-
-            <div class="info-item">
-
-                <span>
-                    CATEGORY
-                </span>
-
-                <strong>
-                    Hardware Modification
-                </strong>
-
-            </div>
-
-
-            <div class="info-item">
-
-                <span>
-                    FOCUS
-                </span>
-
-                <strong>
-                    Thermal Management
-                </strong>
-
-            </div>
-
-        </div>
-
     </header>
 
 
+    <!-- =================================================
+         PROJECT METADATA
+         ================================================= -->
 
-    <!-- =====================================================
+    <div class="project-meta">
+
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                PROJECT TYPE
+            </span>
+
+            <span class="project-meta-value">
+                Personal Project
+            </span>
+
+        </div>
+
+
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                CATEGORY
+            </span>
+
+            <span class="project-meta-value">
+                Hardware Modification
+            </span>
+
+        </div>
+
+
+        <div class="project-meta-item">
+
+            <span class="project-meta-label">
+                FOCUS
+            </span>
+
+            <span class="project-meta-value">
+                Thermal Management
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <!-- =================================================
          HERO IMAGE
-         ===================================================== -->
+         ================================================= -->
 
-    <div class="project-hero">
+    <div class="project-hero-image">
 
         <img
             src="images/mac_design_first.png"
@@ -155,22 +157,18 @@
     </div>
 
 
-
-    <!-- =====================================================
+    <!-- =================================================
          OVERVIEW
-         ===================================================== -->
+         ================================================= -->
 
-    <section
-        class="content-section overview-section"
-        id="overview"
-    >
+    <section class="project-detail-section">
 
-        <div class="section-marker">
+        <div class="project-detail-label">
             OVERVIEW
         </div>
 
 
-        <div class="section-content">
+        <div class="project-detail-content">
 
             <h2>
                 Rethinking the cooling system.
@@ -184,7 +182,7 @@
             </p>
 
             <p>
-                Rather than simply relying on the original
+                Rather than simply using the original
                 fan-based thermal management system, I
                 investigated how a liquid-cooling solution
                 could be integrated into the compact
@@ -196,660 +194,504 @@
     </section>
 
 
+<!-- =================================================
+     DESIGN PROCESS
+     ================================================= -->
 
-    <!-- =====================================================
-         DESIGN CONSTRAINTS
-         ===================================================== -->
+<section class="project-detail-section design-process">
 
-    <section
-        class="content-section constraints-section"
-        id="design"
-    >
-
-        <div class="section-marker">
-            DESIGN
-        </div>
+```
+<div class="project-detail-label">
+    DESIGN PROCESS
+</div>
 
 
-        <div class="section-content">
+<div class="project-detail-content">
 
-            <h2>
-                Designing around constraints.
-            </h2>
+    <h2>
+        From concept to a working cooling loop.
+    </h2>
 
-            <div class="two-column-text">
-
-                <p>
-                    One of the biggest challenges was the
-                    extremely limited internal space of the
-                    MacBook Air.
-                </p>
-
-                <p>
-                    Every component of the cooling system had
-                    to be considered in relation to the
-                    existing motherboard, chassis, battery,
-                    and other internal components.
-                </p>
-
-            </div>
+    <p class="design-intro">
+        The goal was to replace the MacBook Air's original
+        fan-based cooling system with a compact liquid
+        cooling loop. The design process focused on how
+        each component could work together while fitting
+        within the constraints of the laptop.
+    </p>
 
 
-            <div class="design-statement">
+    <!-- =================================================
+         EXPLODED VIEW
+         ================================================= -->
 
-                <span>
-                    DESIGN PRIORITY
-                </span>
+    <div class="system-diagram exploded-view">
 
-                <strong>
-                    Maximize thermal transfer while
-                    working within the physical
-                    constraints of the laptop.
-                </strong>
+        <span class="component-category">
+            EXPLODED VIEW
+        </span>
 
-            </div>
+        <h3>
+            Understanding the system.
+        </h3>
 
-        </div>
+        <img
+            src="image/Boompic.gif"
+            alt="Exploded diagram of the custom MacBook Air liquid cooling system"
+        >
 
-    </section>
+    </div>
 
 
+    <!-- =================================================
+         SYSTEM OPERATION
+         ================================================= -->
 
-    <!-- =====================================================
-         DESIGN PROCESS
-         ===================================================== -->
+    <div class="system-operation">
 
-    <section
-        class="design-process"
-        id="design-process"
-    >
+        <span class="component-category">
+            SYSTEM OPERATION
+        </span>
 
-        <div class="design-process-header">
+        <h3>
+            How the cooling loop works.
+        </h3>
 
-            <span class="section-marker">
-                DESIGN PROCESS
-            </span>
-
-            <h2>
-                From concept to a
-                working cooling loop.
-            </h2>
+        <div class="operation-text">
 
             <p>
-                The goal was to create a compact liquid-cooling
-                loop in which each component served a specific
-                role while fitting within the limited space
-                available inside the MacBook Air.
+                The system begins at the copper cold plate,
+                which provides the thermal interface between
+                the processor and the coolant. As the
+                processor generates heat, the copper plate
+                transfers that heat into the circulating
+                coolant.
+            </p>
+
+            <p>
+                The heated coolant is then pumped away from
+                the cold plate and into a dedicated cooling
+                section. This section uses a custom metal
+                cooling tube together with a fan to transfer
+                heat from the coolant into the surrounding
+                air.
+            </p>
+
+            <p>
+                After passing through the cooling section,
+                the coolant returns to the reservoir. From
+                there, it is pumped back toward the cold
+                plate, creating a continuous cooling loop.
             </p>
 
         </div>
 
 
+        <!-- COOLING LOOP -->
 
-        <!-- =================================================
-             EXPLODED VIEW
-             ================================================= -->
+        <div class="cooling-loop">
 
-        <div class="exploded-section">
+            <div class="loop-item">
 
-            <div class="subsection-heading">
+                <span>01</span>
 
-                <span>
-                    01 / EXPLODED VIEW
-                </span>
+                <strong>
+                    Cold Plate
+                </strong>
 
-                <h3>
-                    Understanding the system.
-                </h3>
-
-                <p>
-                    Before looking at each component
-                    individually, the exploded view shows
-                    how the complete cooling system is
-                    assembled.
-                </p>
+                <small>
+                    Absorbs processor heat
+                </small>
 
             </div>
 
 
-            <div class="exploded-media">
-
-                <!--
-                    IF YOUR FILE IS A GIF:
-                -->
-
-                <img
-                    src="image/Boompic.gif"
-                    alt="Animated exploded view of the MacBook Air liquid cooling system"
-                >
+            <div class="loop-line"></div>
 
 
-                <!--
-                    IF YOUR FILE IS ACTUALLY AN MP4,
-                    DELETE THE IMG ABOVE AND USE THIS:
+            <div class="loop-item">
 
-                    <video
-                        autoplay
-                        muted
-                        loop
-                        playsinline
-                    >
-                        <source
-                            src="image/Boom Project.mp4"
-                            type="video/mp4"
-                        >
-                    </video>
-                -->
+                <span>02</span>
 
-            </div>
+                <strong>
+                    Pump
+                </strong>
 
-        </div>
-
-
-
-        <!-- =================================================
-             HOW IT WORKS
-             ================================================= -->
-
-        <div
-            class="operation-section"
-            id="system-operation"
-        >
-
-            <div class="subsection-heading">
-
-                <span>
-                    02 / SYSTEM OPERATION
-                </span>
-
-                <h3>
-                    How the cooling loop works.
-                </h3>
+                <small>
+                    Moves heated coolant
+                </small>
 
             </div>
 
 
-            <div class="operation-layout">
-
-                <div class="operation-description">
-
-                    <p>
-                        The system begins at the copper cold
-                        plate, which provides the thermal
-                        interface between the processor and
-                        the coolant.
-                    </p>
-
-                    <p>
-                        As the processor generates heat, the
-                        copper plate transfers that heat into
-                        the circulating coolant. The heated
-                        coolant is then pumped away from the
-                        cold plate and toward the dedicated
-                        cooling section.
-                    </p>
-
-                    <p>
-                        The cooling section consists of a fan
-                        and a custom metal cooling tube. Heat
-                        is transferred from the coolant through
-                        the tube and dissipated into the
-                        surrounding air with the assistance
-                        of the fan.
-                    </p>
-
-                    <p>
-                        Once the coolant has been cooled, it
-                        returns to the reservoir. From there,
-                        the pump circulates it back toward the
-                        cold plate, completing the cycle.
-                    </p>
-
-                </div>
+            <div class="loop-line"></div>
 
 
-                <!-- COOLING LOOP -->
+            <div class="loop-item">
 
-                <div class="cooling-loop">
+                <span>03</span>
 
-                    <div class="loop-step">
+                <strong>
+                    Cooling Section
+                </strong>
 
-                        <span>
-                            01
-                        </span>
+                <small>
+                    Removes heat
+                </small>
 
-                        <strong>
-                            Cold Plate
-                        </strong>
-
-                        <small>
-                            Absorbs processor heat
-                        </small>
-
-                    </div>
+            </div>
 
 
-                    <div class="loop-arrow">
-                        →
-                    </div>
+            <div class="loop-line"></div>
 
 
-                    <div class="loop-step">
+            <div class="loop-item">
 
-                        <span>
-                            02
-                        </span>
+                <span>04</span>
 
-                        <strong>
-                            Pump
-                        </strong>
+                <strong>
+                    Reservoir
+                </strong>
 
-                        <small>
-                            Moves heated coolant
-                        </small>
-
-                    </div>
-
-
-                    <div class="loop-arrow">
-                        →
-                    </div>
-
-
-                    <div class="loop-step">
-
-                        <span>
-                            03
-                        </span>
-
-                        <strong>
-                            Cooling Section
-                        </strong>
-
-                        <small>
-                            Dissipates heat
-                        </small>
-
-                    </div>
-
-
-                    <div class="loop-arrow">
-                        →
-                    </div>
-
-
-                    <div class="loop-step">
-
-                        <span>
-                            04
-                        </span>
-
-                        <strong>
-                            Reservoir
-                        </strong>
-
-                        <small>
-                            Returns coolant
-                        </small>
-
-                    </div>
-
-                </div>
+                <small>
+                    Stores returning coolant
+                </small>
 
             </div>
 
         </div>
 
+    </div>
 
 
-        <!-- =================================================
-             COMPONENT BREAKDOWN
-             ================================================= -->
+    <!-- =================================================
+         COMPONENT BREAKDOWN
+         ================================================= -->
 
-        <div
-            class="components-section"
-            id="components"
-        >
+    <div class="component-breakdown">
 
-            <div class="subsection-heading">
+        <div class="component-breakdown-heading">
 
-                <span>
-                    03 / COMPONENT BREAKDOWN
-                </span>
-
-                <h3>
-                    Inside the system.
-                </h3>
-
-                <p>
-                    Each component was designed around a
-                    specific function within the cooling loop.
-                </p>
-
-            </div>
-
-
-
-            <!-- COMPONENT 01 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    01
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/cold_plate.jpg"
-                        alt="Copper cold plate"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        HEAT TRANSFER
-                    </span>
-
-                    <h4>
-                        Copper Cold Plate
-                    </h4>
-
-                    <p>
-                        The copper plate acts as the primary
-                        thermal interface between the processor
-                        and the coolant.
-                    </p>
-
-                    <p>
-                        Copper was selected for its high thermal
-                        conductivity, allowing heat generated by
-                        the processor to transfer efficiently
-                        into the circulating coolant.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- COMPONENT 02 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    02
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/cold_plate_housing.jpg"
-                        alt="3D-printed cold plate enclosure"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        STRUCTURAL
-                    </span>
-
-                    <h4>
-                        3D-Printed Enclosure
-                    </h4>
-
-                    <p>
-                        The copper cold plate is bonded to a
-                        custom enclosure fabricated through
-                        3D printing.
-                    </p>
-
-                    <p>
-                        The enclosure provides the structure
-                        needed to integrate the cold plate with
-                        the rest of the cooling loop while
-                        accommodating the limited space
-                        available inside the laptop.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- COMPONENT 03 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    03
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/pump.jpg"
-                        alt="Liquid cooling pump"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        CIRCULATION
-                    </span>
-
-                    <h4>
-                        Pump
-                    </h4>
-
-                    <p>
-                        The pump drives the coolant through the
-                        system, moving heated coolant away from
-                        the cold plate and toward the cooling
-                        section.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- COMPONENT 04 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    04
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/cooling_tube.jpg"
-                        alt="3D-printed metal cooling tube"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        HEAT DISSIPATION
-                    </span>
-
-                    <h4>
-                        Cooling Tube
-                    </h4>
-
-                    <p>
-                        The custom metal tube acts as the
-                        primary heat-exchange component in
-                        the cooling section.
-                    </p>
-
-                    <p>
-                        Heat from the coolant is transferred
-                        through the tube and dissipated into
-                        the surrounding air with the assistance
-                        of the fan.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- COMPONENT 05 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    05
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/fan.jpg"
-                        alt="Cooling fan"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        AIRFLOW
-                    </span>
-
-                    <h4>
-                        Cooling Fan
-                    </h4>
-
-                    <p>
-                        The fan increases airflow across the
-                        cooling tube, helping transfer heat from
-                        the coolant into the surrounding
-                        environment.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-
-            <!-- COMPONENT 06 -->
-
-            <article class="component-row">
-
-                <div class="component-number">
-                    06
-                </div>
-
-
-                <div class="component-image">
-
-                    <img
-                        src="images/reservoir.jpg"
-                        alt="Liquid cooling reservoir"
-                    >
-
-                </div>
-
-
-                <div class="component-description">
-
-                    <span>
-                        COOLANT MANAGEMENT
-                    </span>
-
-                    <h4>
-                        Reservoir
-                    </h4>
-
-                    <p>
-                        The reservoir stores the coolant and
-                        provides a central point for the coolant
-                        to return to after passing through the
-                        cooling section.
-                    </p>
-
-                </div>
-
-            </article>
-
-        </div>
-
-
-
-        <!-- =================================================
-             TRANSITION
-             ================================================= -->
-
-        <div class="implementation-transition">
-
-            <span>
-                FROM DESIGN TO HARDWARE
+            <span class="component-category">
+                COMPONENT BREAKDOWN
             </span>
 
             <h3>
-                The concept was ready.
-                Now it was time to build it.
+                Inside the system.
             </h3>
 
             <p>
-                With the function and placement of each
-                component established, the next challenge
-                was turning the concept into a physical
-                system.
+                Each component was designed around a specific
+                function within the cooling loop.
             </p>
-
-            <a href="#implementation">
-                Continue to Implementation ↓
-            </a>
 
         </div>
 
-    </section>
+
+        <!-- COMPONENT 01 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                01
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/cold_plate.jpg"
+                    alt="Copper cold plate"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    HEAT TRANSFER
+                </span>
+
+                <h3>
+                    Copper Cold Plate
+                </h3>
+
+                <p>
+                    The copper plate acts as the primary
+                    thermal interface between the processor
+                    and the coolant.
+                </p>
+
+                <p>
+                    Copper was selected for its high thermal
+                    conductivity, allowing heat generated by
+                    the processor to transfer into the
+                    circulating coolant.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 02 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                02
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/cold_plate_housing.jpg"
+                    alt="3D-printed cold plate enclosure"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    STRUCTURAL
+                </span>
+
+                <h3>
+                    3D-Printed Enclosure
+                </h3>
+
+                <p>
+                    The copper cold plate is bonded to a
+                    custom enclosure fabricated through
+                    3D printing.
+                </p>
+
+                <p>
+                    The enclosure provides the structure
+                    needed to integrate the cold plate with
+                    the rest of the cooling loop while
+                    accommodating the limited space
+                    available inside the system.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 03 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                03
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/pump.jpg"
+                    alt="Liquid cooling pump"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    CIRCULATION
+                </span>
+
+                <h3>
+                    Pump
+                </h3>
+
+                <p>
+                    The pump drives the coolant through the
+                    system, moving heated coolant away from
+                    the cold plate and toward the cooling
+                    section.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 04 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                04
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/cooling_tube.jpg"
+                    alt="3D-printed metal cooling tube"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    HEAT DISSIPATION
+                </span>
+
+                <h3>
+                    Cooling Tube
+                </h3>
+
+                <p>
+                    The custom metal tube acts as the primary
+                    heat-exchange component in the cooling
+                    section.
+                </p>
+
+                <p>
+                    Heat from the coolant is transferred
+                    through the tube and dissipated into the
+                    surrounding air with the assistance of
+                    the fan.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 05 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                05
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/fan.jpg"
+                    alt="Cooling fan"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    AIRFLOW
+                </span>
+
+                <h3>
+                    Cooling Fan
+                </h3>
+
+                <p>
+                    The fan increases airflow across the
+                    cooling tube, helping transfer heat from
+                    the coolant into the surrounding
+                    environment.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 06 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                06
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/reservoir.jpg"
+                    alt="Liquid cooling reservoir"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    COOLANT MANAGEMENT
+                </span>
+
+                <h3>
+                    Reservoir
+                </h3>
+
+                <p>
+                    The reservoir stores the coolant and
+                    provides a central point for the coolant
+                    to return to after passing through the
+                    cooling section.
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+
+    <!-- =================================================
+         TRANSITION TO IMPLEMENTATION
+         ================================================= -->
+
+    <div class="design-transition">
+
+        <span class="component-category">
+            FROM DESIGN TO HARDWARE
+        </span>
+
+        <h3>
+            Once the system was designed,
+            it was time to build it.
+        </h3>
+
+        <p>
+            With the function and placement of each
+            component established, the next challenge
+            was turning the concept into a physical
+            system. The following section documents the
+            fabrication, assembly, and final integration
+            of the cooling loop into the MacBook Air.
+        </p>
+
+        <a href="#implementation" class="transition-link">
+            Continue to Implementation ↓
+        </a>
+
+    </div>
+
+</div>
+```
+
+</section>
 
 
 
-    <!-- =====================================================
+    <!-- =================================================
          IMPLEMENTATION
-         ===================================================== -->
+         ================================================= -->
 
-    <section
-        class="content-section implementation-section"
-        id="implementation"
-    >
+    <section class="project-detail-section">
 
-        <div class="section-marker">
+        <div class="project-detail-label">
             IMPLEMENTATION
         </div>
 
 
-        <div class="section-content">
+        <div class="project-detail-content">
 
             <h2>
                 Turning the design into hardware.
@@ -867,64 +709,30 @@
                 precise placement of the cooling hardware.
             </p>
 
-
-            <!--
-                ADD YOUR IMPLEMENTATION PHOTOS HERE.
-
-                Example:
-
-                <div class="implementation-gallery">
-
-                    <img
-                        src="images/implementation-1.jpg"
-                        alt="Installing the liquid cooling system"
-                    >
-
-                    <img
-                        src="images/implementation-2.jpg"
-                        alt="MacBook Air internal cooling modification"
-                    >
-
-                </div>
-            -->
-
-
-            <div class="implementation-note">
-
-                <span>
-                    HANDS-ON EXPERIENCE
-                </span>
-
-                <p>
-                    This stage of the project provided
-                    hands-on experience with hardware
-                    modification, mechanical constraints,
-                    prototyping, and thermal management.
-                </p>
-
-            </div>
+            <p>
+                This stage of the project provided hands-on
+                experience with hardware modification,
+                mechanical constraints, and thermal
+                management.
+            </p>
 
         </div>
 
     </section>
 
 
-
-    <!-- =====================================================
+    <!-- =================================================
          RESULTS
-         ===================================================== -->
+         ================================================= -->
 
-    <section
-        class="content-section results-section"
-        id="results"
-    >
+    <section class="project-detail-section">
 
-        <div class="section-marker">
+        <div class="project-detail-label">
             RESULTS
         </div>
 
 
-        <div class="section-content">
+        <div class="project-detail-content">
 
             <h2>
                 What I learned.
@@ -950,58 +758,57 @@
     </section>
 
 
-
-    <!-- =====================================================
+    <!-- =================================================
          SKILLS
-         ===================================================== -->
+         ================================================= -->
 
-    <section
-        class="content-section skills-section"
-        id="skills"
-    >
+    <section class="project-detail-section">
 
-        <div class="section-marker">
+        <div class="project-detail-label">
             SKILLS & TECHNOLOGIES
         </div>
 
 
-        <div class="skill-list">
+        <div class="project-detail-content">
 
-            <span>
-                Thermal Engineering
-            </span>
+            <div class="large-tags">
 
-            <span>
-                Liquid Cooling
-            </span>
+                <span>
+                    Thermal Engineering
+                </span>
 
-            <span>
-                Mechanical Design
-            </span>
+                <span>
+                    Liquid Cooling
+                </span>
 
-            <span>
-                Hardware Modification
-            </span>
+                <span>
+                    Mechanical Design
+                </span>
 
-            <span>
-                Prototyping
-            </span>
+                <span>
+                    Hardware Modification
+                </span>
 
-            <span>
-                Thermal Management
-            </span>
+                <span>
+                    Prototyping
+                </span>
+
+                <span>
+                    Thermal Management
+                </span>
+
+            </div>
 
         </div>
 
     </section>
 
 
-
-    <!-- =====================================================
+    <!-- =================================================
          BACK TO PROJECTS
-         ===================================================== -->
+         ================================================= -->
 
-    <div class="back-to-projects">
+    <div class="project-back">
 
         <a href="index.html#projects">
             ← Back to Projects
@@ -1013,23 +820,22 @@
 </main>
 
 
-
-<!-- =========================================================
+<!-- =====================================================
      FOOTER
-     ========================================================= -->
+     ===================================================== -->
 
 <footer>
 
-    <span>
+    <p>
         © 2026 Max Hsu
-    </span>
+    </p>
 
-    <span>
+    <p>
         Built with HTML & CSS
-    </span>
+    </p>
 
 </footer>
-
+```
 
 </body>
 
