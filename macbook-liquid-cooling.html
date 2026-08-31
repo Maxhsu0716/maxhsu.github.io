@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yo Chill – Water-Cooled Laptop Engineering</title>
-    <link rel="stylesheet" href="style_macbook.css">
+    <link rel="stylesheet" href="styles_macbook.css">
 </head>
 <body>
 
@@ -20,11 +20,15 @@
     <section>
         <h2>Executive Summary</h2>
         <p>
-            <strong>Yo Chill</strong> is an engineering project focused on converting a legacy <strong>2017 MacBook Air</strong> into a portable, high-performance, water-cooled machine. 
+            <strong>Yo Chill</strong> is an engineering project focused on converting a legacy <strong>2017 MacBook Air</strong> into a portable, high-performance, water-cooled machine.
         </p>
         <p>
             Older laptops often suffer from severe thermal throttling, high fan noise, and performance limitations. Commercial external liquid-cooling laptops can cost upwards of $7,000 USD and remain too bulky for daily transport, while DIY mods usually lack portability. This project bridges the gap by integrating a custom liquid-cooling loop into a lightweight 3D-printed chassis.
         </p>
+        <div class="media-container">
+            <img src="image/Finalpic.jpg" alt="Water-Cooled MacBook Air Booting Up">
+            <span class="caption">Figure 1: Modded 2017 MacBook Air booting up with custom cooling attachments.</span>
+        </div>
     </section>
 
     <section>
@@ -92,8 +96,31 @@
     </section>
 
     <section>
-        <h2>Technical Implementation</h2>
-        <p><strong>Digital Fabrication:</strong> Utilized 3D printing to fabricate a custom rear panel and integrated mounting stand specifically fitted to the 2017 MacBook Air form factor.</p>
+        <h2>Technical Implementation & Digital Fabrication</h2>
+        <p><strong>Metal 3D Printing & Fabrication:</strong> Using industrial metal additive manufacturing (Tongtai AMP-160 selective laser melting equipment), we fabricated custom high-efficiency internal liquid tubing structures designed specifically for dense thermal transfer.</p>
+        
+        <div class="media-grid">
+            <div class="media-container">
+                <img src="image/metal_3Dprinter.jpg" alt="Tongtai AMP-160 Metal 3D Printer">
+                <span class="caption">Figure 2: Tongtai AMP-160 Metal 3D Printing Station.</span>
+            </div>
+            <div class="media-container">
+                <video controls>
+                    <source src="image/laser_sintering.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <span class="caption">Video 1: Selective laser melting process generating internal copper/metal channels.</span>
+            </div>
+            <div class="media-container">
+                <img src="image/Tube_final.jpg" alt="Selective Laser Sintered Cooling Plate">
+                <span class="caption">Figure 3: Completed metal-printed heat sink and internal liquid loop module.</span>
+            </div>
+            <div class="media-container">
+                <img src="image/stand_final.jpg" alt="3D Printed Laptop Stand and Chassis">
+                <span class="caption">Figure 4: Custom 3D-printed chassis backplate and integrated laptop stand.</span>
+            </div>
+        </div>
+
         <p><strong>Dual Operating Modes:</strong></p>
         <ul>
             <li><strong>Silent Mode:</strong> Fans are disabled, relying entirely on passive dissipation and coolant circulation for zero-noise productivity.</li>
@@ -109,11 +136,7 @@
             <li><strong>Acoustic Profiling:</strong> Recorded noise output with a calibrated decibel meter, achieving maximum load levels of ≤ 35 dB.</li>
         </ul>
     </section>
-    <a href="index.html" class="project-link">
-    Back to Home →
-    </a>
-
 </article>
- 
+
 </body>
 </html>
