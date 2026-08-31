@@ -236,51 +236,309 @@
     </section>
 
 
-    <!-- =================================================
-         DESIGN IMAGES
-         ================================================= -->
+ <!-- =================================================
+     DESIGN PROCESS
+     ================================================= -->
 
-    <section class="project-detail-section">
+<section class="project-detail-section design-process">
 
-        <div class="project-detail-label">
-            DESIGN PROCESS
-        </div>
-
-
-        <div class="project-detail-content">
-
-            <p>
-                The following images document the development
-                and modification process.
-            </p>
+```
+<div class="project-detail-label">
+    DESIGN PROCESS
+</div>
 
 
-            <div class="project-gallery">
+<div class="project-detail-content">
+
+    <h2>
+        Breaking down the system.
+    </h2>
+
+    <p>
+        The cooling system was designed as a collection
+        of individual components, each serving a specific
+        role in moving heat away from the processor.
+    </p>
+
+
+    <!-- PROJECT VIDEO -->
+
+    <div class="project-video">
+
+        <video controls preload="metadata">
+
+            <source
+                src="image/Boom Project.mp4"
+                type="video/mp4"
+            >
+
+            Your browser does not support the video tag.
+
+        </video>
+
+    </div>
+
+
+    <!-- SYSTEM BREAKDOWN -->
+
+    <div class="component-breakdown">
+
+
+        <!-- COMPONENT 01 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                01
+            </div>
+
+            <div class="component-image">
 
                 <img
-                    src="image/first_design.png"
-                    alt="Initial MacBook Air cooling system design"
-                >
-                <img
-                    src="image/mac_design_first.png"
-                    alt="MacBook Air internal components"
-                >
-
-                <img
-                    src="image/metal_3Dprinter.jpg"
-                    alt="Custom liquid cooling loop"
-                >
-
-                <img
-                    src="image/Finalpic.jpg"
-                    alt="Completed liquid cooling modification"
+                    src="images/cold_plate.jpg"
+                    alt="Custom CPU cold plate"
                 >
 
             </div>
 
-        </div>
+            <div class="component-info">
 
-    </section>
+                <span class="component-category">
+                    HEAT TRANSFER
+                </span>
+
+                <h3>
+                    Cold Plate
+                </h3>
+
+                <p>
+                    The cold plate provides the thermal
+                    interface between the processor and
+                    the liquid-cooling loop. Heat generated
+                    by the processor is transferred into
+                    the circulating coolant.
+                </p>
+
+                <p>
+                    Its compact form factor was important
+                    because the cooling solution had to
+                    fit within the limited internal space
+                    of the MacBook Air.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 02 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                02
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/pump.jpg"
+                    alt="Liquid cooling pump"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    CIRCULATION
+                </span>
+
+                <h3>
+                    Pump
+                </h3>
+
+                <p>
+                    The pump drives coolant through the
+                    system, continuously moving heated
+                    coolant away from the processor and
+                    toward the radiator.
+                </p>
+
+                <p>
+                    Because the system was designed for
+                    a laptop, the pump had to balance
+                    sufficient flow with the physical
+                    constraints of the build.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 03 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                03
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/radiator.jpg"
+                    alt="Liquid cooling radiator"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    HEAT REJECTION
+                </span>
+
+                <h3>
+                    Radiator
+                </h3>
+
+                <p>
+                    The radiator removes heat from the
+                    coolant before it returns to the
+                    processor.
+                </p>
+
+                <p>
+                    Its placement and size were constrained
+                    by the available space around the
+                    modified laptop chassis.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 04 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                04
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="images/tubing.jpg"
+                    alt="Liquid cooling tubing"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    FLOW PATH
+                </span>
+
+                <h3>
+                    Tubing
+                </h3>
+
+                <p>
+                    Tubing connects the major components
+                    of the cooling loop and provides the
+                    path for coolant circulation.
+                </p>
+
+                <p>
+                    Routing the tubing required careful
+                    consideration of available space,
+                    component placement, and interference
+                    with existing hardware.
+                </p>
+
+            </div>
+
+        </article>
+
+
+        <!-- COMPONENT 05 -->
+
+        <article class="component">
+
+            <div class="component-number">
+                05
+            </div>
+
+            <div class="component-image">
+
+                <img
+                    src="image/reservoir.jpg"
+                    alt="Liquid cooling reservoir"
+                >
+
+            </div>
+
+            <div class="component-info">
+
+                <span class="component-category">
+                    COOLANT MANAGEMENT
+                </span>
+
+                <h3>
+                    Reservoir
+                </h3>
+
+                <p>
+                    The reservoir stores coolant and helps
+                    maintain a consistent supply for the
+                    pump.
+                </p>
+
+                <p>
+                    Integrating the reservoir into a compact
+                    laptop-based system required balancing
+                    its function with the limited available
+                    volume.
+                </p>
+
+            </div>
+
+        </article>
+
+
+    </div>
+
+
+    <!-- SYSTEM DIAGRAM -->
+
+    <div class="system-diagram">
+
+        <span class="component-category">
+            SYSTEM OVERVIEW
+        </span>
+
+        <h3>
+            How everything works together.
+        </h3>
+
+        <img
+            src="images/cooling-system-diagram.png"
+            alt="Diagram showing the MacBook liquid cooling system"
+        >
+
+    </div>
+
+
+</div>
+```
+
+</section>
+
 
 
     <!-- =================================================
