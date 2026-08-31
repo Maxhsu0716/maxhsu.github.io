@@ -809,7 +809,9 @@ footer {
 }
 
 .loop-line {
+    width: 32px;
     height: 1px;
+    margin: 0 auto;
     background: rgba(255, 255, 255, 0.15);
     position: relative;
 }
