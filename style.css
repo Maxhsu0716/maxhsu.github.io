@@ -1656,3 +1656,199 @@ footer {
     }
 
 }
+/* =========================================================
+   SYSTEM OPERATION
+   ========================================================= */
+
+.system-operation {
+    margin-top: 100px;
+
+    padding-top: 70px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.1);
+}
+
+.system-operation h3 {
+    color: #f1f3f5;
+
+    font-size: 2rem;
+
+    letter-spacing: -0.04em;
+
+    margin-bottom: 35px;
+}
+
+.system-operation p {
+    max-width: 720px;
+}
+
+
+/* =========================================================
+   COOLING FLOW
+   ========================================================= */
+
+.cooling-flow {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        auto
+        1fr
+        auto
+        1fr
+        auto
+        1fr;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-top: 60px;
+
+    padding: 30px 0;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.08);
+
+    border-bottom:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+.flow-step {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+}
+
+.flow-step span {
+    color: #555c65;
+
+    font-size: 0.65rem;
+
+    font-weight: 700;
+
+    letter-spacing: 0.15em;
+}
+
+.flow-step strong {
+    color: #f1f3f5;
+
+    font-size: 0.8rem;
+}
+
+.flow-step small {
+    color: #737b86;
+
+    font-size: 0.65rem;
+}
+
+.flow-arrow {
+    color: #555c65;
+
+    font-size: 1.2rem;
+}
+
+
+/* =========================================================
+   COMPONENT BREAKDOWN HEADING
+   ========================================================= */
+
+.component-breakdown-heading {
+    padding:
+        70px
+        0
+        20px;
+}
+
+.component-breakdown-heading h3 {
+    color: #f1f3f5;
+
+    font-size: 2rem;
+
+    letter-spacing: -0.04em;
+
+    margin-top: 10px;
+}
+
+
+/* =========================================================
+   EXPLODED DIAGRAM
+   ========================================================= */
+
+.system-diagram {
+    margin-top: 100px;
+
+    padding-top: 60px;
+
+    border-top:
+        1px solid rgba(255, 255, 255, 0.1);
+}
+
+.system-diagram h3 {
+    color: #f1f3f5;
+
+    font-size: 2rem;
+
+    letter-spacing: -0.04em;
+
+    margin-bottom: 35px;
+}
+
+.system-diagram img {
+    width: 100%;
+
+    display: block;
+
+    background: #111419;
+
+    border:
+        1px solid rgba(255, 255, 255, 0.08);
+}
+
+
+/* =========================================================
+   MOBILE — SYSTEM FLOW
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .cooling-flow {
+        grid-template-columns:
+            1fr
+            auto
+            1fr;
+
+        row-gap: 25px;
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .cooling-flow {
+        display: flex;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 20px;
+
+        padding: 30px 0;
+    }
+
+    .flow-arrow {
+        transform: rotate(90deg);
+
+        align-self: center;
+    }
+
+    .flow-step {
+        width: 100%;
+    }
+
+}
