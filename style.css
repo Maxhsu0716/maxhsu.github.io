@@ -89,7 +89,7 @@ nav {
 }
 
 .nav-container {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 20px 30px;
     display: flex;
@@ -124,7 +124,7 @@ nav {
    ========================================================= */
 
 .section {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 80px 30px;
 }
@@ -136,7 +136,7 @@ nav {
 
 .hero {
     min-height: 90vh;
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 130px 30px 60px;
     display: flex;
@@ -502,7 +502,7 @@ nav {
    ========================================================= */
 
 .contact-section {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 90px 30px 70px;
     text-align: center;
@@ -551,7 +551,7 @@ nav {
    ========================================================= */
 
 footer {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 30px;
     display: flex;
@@ -567,7 +567,7 @@ footer {
    ========================================================= */
 
 .project-page {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 130px 30px 80px;
 }
@@ -685,7 +685,7 @@ footer {
 }
 
 .project-back {
-    max-width: 1400px;
+    max-width: min(92vw, 1800px);
     margin: 0 auto;
     padding: 0 30px;
 }
