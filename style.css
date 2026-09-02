@@ -8,6 +8,17 @@
     --blue-glow: rgba(47, 143, 255, 0.6);
     --yellow: #ffd60a;
     --yellow-glow: rgba(255, 214, 10, 0.5);
+    --page-bg: #d6e9ff;
+    --panel-bg: #eef5ff;
+    --ink: #0d2340;
+    --slate-700: #33445c;
+    --slate-600: #4a5d78;
+    --slate-500: #5c7093;
+    --slate-400: #8199bd;
+    --slate-300: #a9bed8;
+    --heading-accent: #3d5375;
+    --border-rgb: 13, 35, 64;
+    --nav-bg: rgba(14, 42, 77, 0.92);
 }
 
 /* ---------- Reset ---------- */
@@ -23,8 +34,8 @@ html {
 }
 
 body {
-    background: #0b0d10;
-    color: #f1f3f5;
+    background: var(--page-bg);
+    color: var(--ink);
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
@@ -51,7 +62,7 @@ ul {
 /* ---------- Shared type ---------- */
 
 .eyebrow {
-    color: #8f98a3;
+    color: var(--slate-500);
     font-size: 0.75rem;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -62,7 +73,7 @@ ul {
     display: flex;
     align-items: center;
     gap: 15px;
-    color: #8f98a3;
+    color: var(--slate-500);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.2em;
@@ -90,7 +101,8 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(11, 13, 16, 0.85);
+    color: #ffffff;
+    background: var(--nav-bg);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -116,7 +128,7 @@ nav {
 }
 
 .nav-links a {
-    color: #a8adb5;
+    color: #b9c8de;
     font-size: 0.85rem;
     transition: color 0.2s ease;
 }
@@ -166,12 +178,12 @@ nav {
 }
 
 .hero h1 span {
-    color: #777f89;
+    color: var(--heading-accent);
 }
 
 .hero-description {
     max-width: 600px;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 1.1rem;
     margin-bottom: 30px;
 }
@@ -185,7 +197,7 @@ nav {
 .button {
     display: inline-block;
     padding: 13px 22px;
-    border: 1px solid rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(var(--border-rgb), 0.15);
     font-size: 0.85rem;
     font-weight: 700;
     transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
@@ -205,7 +217,7 @@ nav {
 }
 
 .button.secondary {
-    color: #ffffff;
+    color: var(--ink);
 }
 
 .button.secondary:hover {
@@ -228,7 +240,7 @@ nav {
 
 .circuit-line {
     position: absolute;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(var(--border-rgb), 0.1);
 }
 
 .line-1 {
@@ -298,7 +310,7 @@ nav {
 
 .about-text {
     max-width: 640px;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 1rem;
     line-height: 1.85;
 }
@@ -327,8 +339,8 @@ nav {
 }
 
 .project-card {
-    background: #111419;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
     overflow: hidden;
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
@@ -342,8 +354,8 @@ nav {
 .project-image {
     height: 250px;
     overflow: hidden;
-    background: #111419;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 .project-image img {
@@ -368,7 +380,7 @@ nav {
     font-size: 3.5rem;
     font-weight: 800;
     letter-spacing: -0.02em;
-    color: rgba(255, 255, 255, 0.12);
+    color: rgba(var(--border-rgb), 0.12);
 }
 
 .project-content {
@@ -376,7 +388,7 @@ nav {
 }
 
 .project-number {
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -390,17 +402,17 @@ nav {
 }
 
 .project-content p {
-    color: #949ba5;
+    color: var(--slate-600);
     font-size: 0.9rem;
     margin-bottom: 20px;
 }
 
 .project-link {
     display: inline-block;
-    color: #ffffff;
+    color: var(--ink);
     font-size: 0.75rem;
     font-weight: 700;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--slate-300);
     padding-bottom: 4px;
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
@@ -426,8 +438,8 @@ nav {
 .tags span,
 .large-tags span {
     padding: 7px 11px;
-    border: 1px solid rgba(255, 255, 255, 0.12);
-    color: #a8adb5;
+    border: 1px solid rgba(var(--border-rgb), 0.12);
+    color: var(--slate-700);
     font-size: 0.65rem;
 }
 
@@ -437,7 +449,7 @@ nav {
    ========================================================= */
 
 .experience-list {
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .experience-item {
@@ -445,11 +457,11 @@ nav {
     grid-template-columns: 230px 1fr;
     gap: 30px;
     padding: 28px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .experience-date {
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -471,7 +483,7 @@ nav {
 }
 
 .experience-item p:not(.company) {
-    color: #949ba5;
+    color: var(--slate-600);
     font-size: 0.9rem;
     max-width: 560px;
 }
@@ -492,11 +504,11 @@ nav {
     letter-spacing: -0.01em;
     margin-bottom: 20px;
     padding-bottom: 15px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .skill-category ul li {
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 0.9rem;
     padding: 8px 0;
     padding-left: 18px;
@@ -538,7 +550,7 @@ nav {
 .contact-section p {
     max-width: 500px;
     margin: 0 auto 30px;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 1.05rem;
 }
 
@@ -553,7 +565,7 @@ nav {
     font-size: 0.9rem;
     font-weight: 700;
     padding-bottom: 6px;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--slate-300);
     transition: border-color 0.2s ease, color 0.2s ease;
 }
 
@@ -573,9 +585,9 @@ footer {
     padding: 30px;
     display: flex;
     justify-content: space-between;
-    color: #555c65;
+    color: var(--slate-400);
     font-size: 0.7rem;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 
@@ -608,12 +620,12 @@ footer {
 }
 
 .project-page-header h1 span {
-    color: #777f89;
+    color: var(--heading-accent);
 }
 
 .project-intro {
     align-self: end;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 1.05rem;
     line-height: 1.8;
 }
@@ -624,8 +636,8 @@ footer {
     gap: 30px;
     padding: 25px 0;
     margin-bottom: 50px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--border-rgb), 0.1);
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .project-meta-item {
@@ -635,14 +647,14 @@ footer {
 }
 
 .project-meta-label {
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
 }
 
 .project-meta-value {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 0.9rem;
 }
 
@@ -650,8 +662,8 @@ footer {
     width: 100%;
     margin-bottom: 70px;
     overflow: hidden;
-    background: #111419;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 .project-hero-image img {
@@ -665,11 +677,11 @@ footer {
     grid-template-columns: 200px 1fr;
     gap: 50px;
     padding: 55px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .project-detail-label {
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.7rem;
     font-weight: 700;
     letter-spacing: 0.18em;
@@ -677,7 +689,7 @@ footer {
 
 .project-detail-content {
     max-width: 760px;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 1rem;
     line-height: 1.8;
 }
@@ -687,7 +699,7 @@ footer {
 }
 
 .project-detail-content h2 {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: clamp(2rem, 4vw, 3.5rem);
     line-height: 1.05;
     letter-spacing: -0.045em;
@@ -695,7 +707,7 @@ footer {
 }
 
 .project-detail-content h3 {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 2rem;
     letter-spacing: -0.04em;
     margin-bottom: 30px;
@@ -709,7 +721,7 @@ footer {
 
 .project-back a {
     display: inline-block;
-    color: #a8adb5;
+    color: var(--slate-700);
     font-size: 0.85rem;
     font-weight: 700;
     transition: color 0.2s ease;
@@ -740,11 +752,11 @@ footer {
 .system-diagram {
     margin-top: 55px;
     padding-top: 35px;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--border-rgb), 0.1);
 }
 
 .system-diagram h3 {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 2rem;
     letter-spacing: -0.04em;
     margin-bottom: 35px;
@@ -753,8 +765,8 @@ footer {
 .system-diagram img {
     width: 100%;
     display: block;
-    background: #111419;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 /* Exploded view sits right under the intro paragraph, so it resets
@@ -798,8 +810,8 @@ footer {
     align-items: center;
     margin-top: 40px;
     padding: 25px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.08);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    border-top: 1px solid rgba(var(--border-rgb), 0.08);
+    border-bottom: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 .loop-item {
@@ -809,19 +821,19 @@ footer {
 }
 
 .loop-item span {
-    color: #555c65;
+    color: var(--slate-400);
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
 }
 
 .loop-item strong {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 0.85rem;
 }
 
 .loop-item small {
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.65rem;
 }
 
@@ -829,7 +841,7 @@ footer {
     width: 32px;
     height: 1px;
     margin: 0 auto;
-    background: rgba(255, 255, 255, 0.15);
+    background: rgba(var(--border-rgb), 0.15);
     position: relative;
 }
 
@@ -859,7 +871,7 @@ footer {
 
 .component-breakdown-heading p {
     max-width: 600px;
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.9rem;
 }
 
@@ -868,7 +880,7 @@ footer {
     grid-template-columns: 60px 280px 1fr;
     gap: 30px;
     padding: 35px 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(var(--border-rgb), 0.1);
     transition: border-color 0.3s ease;
 }
 
@@ -877,7 +889,7 @@ footer {
 }
 
 .component-number {
-    color: #555c65;
+    color: var(--slate-400);
     font-size: 0.8rem;
     font-weight: 700;
     letter-spacing: 0.1em;
@@ -888,8 +900,8 @@ footer {
     width: 100%;
     height: 220px;
     overflow: hidden;
-    background: #111419;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 .component-image img {
@@ -910,7 +922,7 @@ footer {
 
 .component-category {
     display: block;
-    color: #737b86;
+    color: var(--slate-500);
     font-size: 0.65rem;
     font-weight: 700;
     letter-spacing: 0.15em;
@@ -918,14 +930,14 @@ footer {
 }
 
 .component-info h3 {
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 2rem;
     letter-spacing: -0.04em;
     margin-bottom: 20px;
 }
 
 .component-info p {
-    color: #949ba5;
+    color: var(--slate-600);
     font-size: 0.9rem;
     line-height: 1.8;
     margin-bottom: 18px;
@@ -936,12 +948,12 @@ footer {
 .design-transition {
     margin-top: 65px;
     padding: 45px 0 20px;
-    border-top: 1px solid rgba(255, 255, 255, 0.12);
+    border-top: 1px solid rgba(var(--border-rgb), 0.12);
 }
 
 .design-transition h3 {
     max-width: 650px;
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: clamp(2rem, 4vw, 3.5rem);
     line-height: 1.05;
     letter-spacing: -0.045em;
@@ -950,18 +962,18 @@ footer {
 
 .design-transition p {
     max-width: 650px;
-    color: #8f98a3;
+    color: var(--slate-500);
     line-height: 1.8;
     margin-bottom: 30px;
 }
 
 .transition-link {
     display: inline-block;
-    color: #f1f3f5;
+    color: var(--ink);
     font-size: 0.75rem;
     font-weight: 700;
     padding-bottom: 5px;
-    border-bottom: 1px solid #555;
+    border-bottom: 1px solid var(--slate-300);
     transition: border-color 0.2s ease, transform 0.2s ease;
 }
 
@@ -985,8 +997,8 @@ footer {
     height: 420px;
     object-fit: cover;
     display: block;
-    background: #111419;
-    border: 1px solid rgba(255, 255, 255, 0.08);
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
 
