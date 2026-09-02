@@ -3,6 +3,13 @@
    Global Styles
    ========================================================= */
 
+:root {
+    --blue: #2f8fff;
+    --blue-glow: rgba(47, 143, 255, 0.6);
+    --yellow: #ffd60a;
+    --yellow-glow: rgba(255, 214, 10, 0.5);
+}
+
 /* ---------- Reset ---------- */
 
 * {
@@ -37,8 +44,8 @@ ul {
 }
 
 ::selection {
-    background: #f1f3f5;
-    color: #0b0d10;
+    background: var(--blue);
+    color: #ffffff;
 }
 
 /* ---------- Shared type ---------- */
@@ -63,7 +70,7 @@ ul {
 }
 
 .section-label span {
-    color: #4fa3e3;
+    color: var(--yellow);
 }
 
 .section-title {
@@ -115,7 +122,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #ffffff;
+    color: var(--blue);
 }
 
 
@@ -189,8 +196,12 @@ nav {
 }
 
 .button.primary {
-    background: #f1f3f5;
+    background: var(--yellow);
     color: #0b0d10;
+}
+
+.button.primary:hover {
+    box-shadow: 0 0 24px var(--yellow-glow);
 }
 
 .button.secondary {
@@ -198,7 +209,8 @@ nav {
 }
 
 .button.secondary:hover {
-    border-color: #ffffff;
+    border-color: var(--blue);
+    color: var(--blue);
 }
 
 /* Hero decoration — subtle circuit motif, right side, faded */
@@ -245,8 +257,8 @@ nav {
     width: 8px;
     height: 8px;
     border-radius: 50%;
-    background: #4fa3e3;
-    box-shadow: 0 0 14px rgba(79, 163, 227, 0.7);
+    background: var(--blue);
+    box-shadow: 0 0 14px var(--blue-glow);
     transform: translate(-50%, -50%);
 }
 
@@ -258,6 +270,8 @@ nav {
 .node-2 {
     top: 58%;
     left: 77%;
+    background: var(--yellow);
+    box-shadow: 0 0 14px var(--yellow-glow);
 }
 
 .node-3 {
@@ -321,7 +335,8 @@ nav {
 
 .project-card:hover {
     transform: translateY(-8px);
-    border-color: rgba(255, 255, 255, 0.25);
+    border-color: var(--blue);
+    box-shadow: 0 0 30px rgba(47, 143, 255, 0.15);
 }
 
 .project-image {
@@ -391,7 +406,8 @@ nav {
 }
 
 .project-link:hover {
-    border-color: #ffffff;
+    border-color: var(--blue);
+    color: var(--blue);
     transform: translateX(4px);
 }
 
@@ -426,7 +442,7 @@ nav {
 
 .experience-item {
     display: grid;
-    grid-template-columns: 160px 1fr;
+    grid-template-columns: 230px 1fr;
     gap: 30px;
     padding: 28px 0;
     border-bottom: 1px solid rgba(255, 255, 255, 0.1);
@@ -448,7 +464,7 @@ nav {
 }
 
 .company {
-    color: #4fa3e3;
+    color: var(--blue);
     font-size: 0.85rem;
     font-weight: 700;
     margin-bottom: 14px;
@@ -494,7 +510,7 @@ nav {
     top: 16px;
     width: 6px;
     height: 1px;
-    background: #4fa3e3;
+    background: var(--blue);
 }
 
 
@@ -542,8 +558,8 @@ nav {
 }
 
 .contact-links a:hover {
-    color: #4fa3e3;
-    border-color: #4fa3e3;
+    color: var(--yellow);
+    border-color: var(--yellow);
 }
 
 
@@ -700,7 +716,7 @@ footer {
 }
 
 .project-back a:hover {
-    color: #ffffff;
+    color: var(--blue);
 }
 
 
@@ -822,7 +838,7 @@ footer {
     position: absolute;
     right: -4px;
     top: -11px;
-    color: #4fa3e3;
+    color: var(--yellow);
     font-size: 0.8rem;
 }
 
@@ -857,7 +873,7 @@ footer {
 }
 
 .component:hover {
-    border-color: rgba(255, 255, 255, 0.2);
+    border-color: var(--blue);
 }
 
 .component-number {
@@ -950,7 +966,8 @@ footer {
 }
 
 .transition-link:hover {
-    border-color: #ffffff;
+    border-color: var(--yellow);
+    color: var(--yellow);
     transform: translateY(3px);
 }
 
