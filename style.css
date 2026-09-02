@@ -438,6 +438,7 @@ nav {
     font-weight: 700;
     letter-spacing: 0.15em;
     padding-top: 4px;
+    white-space: nowrap;
 }
 
 .experience-item h3 {
