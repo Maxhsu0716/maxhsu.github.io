@@ -805,19 +805,56 @@ footer {
 /* Cooling loop */
 
 .cooling-loop {
-    display: grid;
-    grid-template-columns: 1fr 60px 1fr 60px 1fr 60px 1fr;
-    align-items: center;
-    margin-top: 40px;
-    padding: 25px 0;
-    border-top: 2px solid rgba(var(--border-rgb), 0.18);
-    border-bottom: 2px solid rgba(var(--border-rgb), 0.18);
+    position: relative;
+    width: 100%;
+    max-width: 480px;
+    aspect-ratio: 400 / 340;
+    margin: 50px auto 0;
+    padding: 20px 0 60px;
+}
+
+.loop-diagram {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.loop-arc {
+    fill: none;
+    stroke: var(--yellow);
+    stroke-width: 2;
+    stroke-linecap: round;
+}
+
+.loop-arrowhead {
+    fill: var(--yellow);
 }
 
 .loop-item {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    align-items: center;
+    gap: 4px;
+    width: 150px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+}
+
+.loop-item-1 {
+    left: 50%;
+    top: 10%;
+}
+
+.loop-item-2 {
+    left: 82.5%;
+    top: 79%;
+}
+
+.loop-item-3 {
+    left: 17.5%;
+    top: 79%;
 }
 
 .loop-item span {
@@ -837,21 +874,15 @@ footer {
     font-size: 0.65rem;
 }
 
-.loop-line {
-    width: 32px;
-    height: 1px;
-    margin: 0 auto;
-    background: rgba(var(--border-rgb), 0.15);
-    position: relative;
-}
-
-.loop-line::after {
-    content: "→";
+.loop-cycle-note {
     position: absolute;
-    right: -4px;
-    top: -11px;
-    color: var(--yellow);
-    font-size: 0.8rem;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    color: var(--slate-500);
+    font-size: 0.7rem;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
 }
 
 /* Component breakdown */
@@ -877,7 +908,7 @@ footer {
 
 .component {
     display: grid;
-    grid-template-columns: 60px 280px 1fr;
+    grid-template-columns: 60px 340px 1fr;
     gap: 30px;
     padding: 35px 0;
     border-top: 2px solid rgba(var(--border-rgb), 0.2);
@@ -896,10 +927,17 @@ footer {
     padding-top: 5px;
 }
 
+.component-images {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
 .component-image {
     width: 100%;
-    height: 220px;
+    height: 260px;
     overflow: hidden;
+    padding: 16px;
     background: var(--panel-bg);
     border: 1px solid rgba(var(--border-rgb), 0.08);
 }
@@ -907,7 +945,7 @@ footer {
 .component-image img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
     display: block;
     transition: transform 0.4s ease;
 }
@@ -1049,12 +1087,8 @@ footer {
     }
 
     .component {
-        grid-template-columns: 40px 220px 1fr;
+        grid-template-columns: 40px 260px 1fr;
         gap: 20px;
-    }
-
-    .cooling-loop {
-        grid-template-columns: 1fr 30px 1fr 30px 1fr 30px 1fr;
     }
 
 }
@@ -1136,22 +1170,30 @@ footer {
     /* Cooling loop */
 
     .cooling-loop {
+        position: static;
+        max-width: none;
+        aspect-ratio: auto;
         display: flex;
         flex-direction: column;
-        align-items: stretch;
         gap: 20px;
-        padding: 30px 0;
+        padding: 30px 0 0;
+        margin-top: 30px;
     }
 
-    .loop-line {
-        width: 100%;
-        height: 1px;
+    .loop-diagram {
+        display: none;
     }
 
-    .loop-line::after {
-        content: "↓";
-        right: -4px;
-        top: -10px;
+    .loop-item {
+        position: static;
+        transform: none;
+        width: auto;
+    }
+
+    .loop-cycle-note {
+        position: static;
+        transform: none;
+        margin-top: 5px;
     }
 
     /* Components */
