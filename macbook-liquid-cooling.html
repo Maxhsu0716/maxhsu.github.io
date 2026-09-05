@@ -623,7 +623,48 @@
             </div>
 
     </section>
-
+      
+  <!-- =================================================
+         GALLERY
+         ================================================= -->
+ 
+    <section class="project-detail-section">
+ 
+        <div class="project-detail-label">
+            GALLERY
+        </div>
+ 
+ 
+        <div class="project-detail-content">
+ 
+            <h2>
+                A closer look.
+            </h2>
+ 
+            <div class="photo-carousel">
+ 
+                <button class="carousel-arrow carousel-prev" type="button" aria-label="Previous photo">‹</button>
+ 
+                <div class="carousel-track">
+ 
+                    <img class="carousel-slide active" src="image/Final1.jpg" alt="REPLACE — describe this photo">
+                    <img class="carousel-slide" src="image/Final2.jpg" alt="REPLACE — describe this photo">
+                    <img class="carousel-slide" src="image/Final3.jpg" alt="REPLACE — describe this photo">
+                    <img class="carousel-slide" src="image/REPLACE-gallery-4.jpg" alt="REPLACE — describe this photo">
+                    <img class="carousel-slide" src="image/REPLACE-gallery-5.jpg" alt="REPLACE — describe this photo">
+ 
+                </div>
+ 
+                <button class="carousel-arrow carousel-next" type="button" aria-label="Next photo">›</button>
+ 
+                <div class="carousel-dots"></div>
+ 
+            </div>
+ 
+        </div>
+ 
+    </section>
+ 
 
     <!-- =================================================
          SKILLS
@@ -702,7 +743,48 @@
     </p>
 
 </footer>
-
+<script>
+document.querySelectorAll('.photo-carousel').forEach(function (carousel) {
+    var slides = carousel.querySelectorAll('.carousel-slide');
+    var dotsWrap = carousel.querySelector('.carousel-dots');
+    var prevBtn = carousel.querySelector('.carousel-prev');
+    var nextBtn = carousel.querySelector('.carousel-next');
+    var current = 0;
+ 
+    slides.forEach(function (_, i) {
+        var dot = document.createElement('button');
+        dot.type = 'button';
+        dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to photo ' + (i + 1));
+        dot.addEventListener('click', function () {
+            goTo(i);
+        });
+        dotsWrap.appendChild(dot);
+    });
+    var dots = dotsWrap.querySelectorAll('.carousel-dot');
+ 
+    function goTo(index) {
+        slides[current].classList.remove('active');
+        dots[current].classList.remove('active');
+        current = (index + slides.length) % slides.length;
+        slides[current].classList.add('active');
+        dots[current].classList.add('active');
+    }
+ 
+    prevBtn.addEventListener('click', function () {
+        goTo(current - 1);
+    });
+    nextBtn.addEventListener('click', function () {
+        goTo(current + 1);
+    });
+ 
+    carousel.setAttribute('tabindex', '0');
+    carousel.addEventListener('keydown', function (e) {
+        if (e.key === 'ArrowLeft') goTo(current - 1);
+        if (e.key === 'ArrowRight') goTo(current + 1);
+    });
+});
+</script>
 </body>
 
 </html>
