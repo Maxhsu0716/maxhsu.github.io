@@ -339,6 +339,7 @@ nav {
 }
 
 .project-card {
+    display: block;
     background: var(--panel-bg);
     border: 1px solid rgba(var(--border-rgb), 0.08);
     overflow: hidden;
@@ -349,6 +350,12 @@ nav {
     transform: translateY(-8px);
     border-color: var(--blue);
     box-shadow: 0 0 30px rgba(47, 143, 255, 0.15);
+}
+
+.project-card:hover .project-link {
+    border-color: var(--blue);
+    color: var(--blue);
+    transform: translateX(4px);
 }
 
 .project-image {
@@ -660,7 +667,8 @@ footer {
 
 .project-hero-image {
     width: 100%;
-    margin-bottom: 70px;
+    max-width: 640px;
+    margin: 0 auto 70px;
     overflow: hidden;
     background: var(--panel-bg);
     border: 1px solid rgba(var(--border-rgb), 0.08);
@@ -669,7 +677,10 @@ footer {
 .project-hero-image img {
     width: 100%;
     height: auto;
+    max-height: 420px;
+    object-fit: contain;
     display: block;
+    margin: 0 auto;
 }
 
 .project-detail-section {
@@ -802,88 +813,6 @@ footer {
     margin-bottom: 24px;
 }
 
-/* Cooling loop */
-
-.cooling-loop {
-    position: relative;
-    width: 100%;
-    max-width: 480px;
-    aspect-ratio: 400 / 340;
-    margin: 50px auto 0;
-    padding: 20px 0 60px;
-}
-
-.loop-diagram {
-    position: absolute;
-    inset: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.loop-arc {
-    fill: none;
-    stroke: var(--yellow);
-    stroke-width: 2;
-    stroke-linecap: round;
-}
-
-.loop-arrowhead {
-    fill: var(--yellow);
-}
-
-.loop-item {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 4px;
-    width: 150px;
-    text-align: center;
-    transform: translate(-50%, -50%);
-}
-
-.loop-item-1 {
-    left: 50%;
-    top: 10%;
-}
-
-.loop-item-2 {
-    left: 82.5%;
-    top: 79%;
-}
-
-.loop-item-3 {
-    left: 17.5%;
-    top: 79%;
-}
-
-.loop-item span {
-    color: var(--slate-400);
-    font-size: 0.65rem;
-    font-weight: 700;
-    letter-spacing: 0.15em;
-}
-
-.loop-item strong {
-    color: var(--ink);
-    font-size: 0.85rem;
-}
-
-.loop-item small {
-    color: var(--slate-500);
-    font-size: 0.65rem;
-}
-
-.loop-cycle-note {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    transform: translateX(-50%);
-    color: var(--slate-500);
-    font-size: 0.7rem;
-    letter-spacing: 0.05em;
-    white-space: nowrap;
-}
 
 /* Component breakdown */
 
@@ -1041,6 +970,74 @@ footer {
 
 
 /* =========================================================
+   IMPLEMENTATION STEPS
+   ========================================================= */
+
+.impl-steps {
+    margin-top: 20px;
+}
+
+.impl-step {
+    display: grid;
+    grid-template-columns: 90px 1fr 300px;
+    gap: 40px;
+    align-items: center;
+    padding: 40px 0;
+    border-top: 2px solid rgba(var(--border-rgb), 0.2);
+}
+
+.impl-step:first-child {
+    border-top: none;
+    padding-top: 10px;
+}
+
+.impl-step-number {
+    color: var(--yellow);
+    font-size: 1.8rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+}
+
+.impl-step-number span {
+    display: block;
+    color: var(--slate-500);
+    font-size: 0.6rem;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    margin-bottom: 6px;
+}
+
+.impl-step-text h3 {
+    color: var(--ink);
+    font-size: 1.3rem;
+    letter-spacing: -0.02em;
+    margin-bottom: 10px;
+}
+
+.impl-step-text p {
+    color: var(--slate-700);
+    font-size: 0.95rem;
+    line-height: 1.7;
+}
+
+.impl-step-image {
+    width: 100%;
+    height: 190px;
+    overflow: hidden;
+    padding: 14px;
+    background: var(--panel-bg);
+    border: 1px solid rgba(var(--border-rgb), 0.08);
+}
+
+.impl-step-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+
+/* =========================================================
    TABLET
    ========================================================= */
 
@@ -1089,6 +1086,11 @@ footer {
     .component {
         grid-template-columns: 40px 260px 1fr;
         gap: 20px;
+    }
+
+    .impl-step {
+        grid-template-columns: 60px 1fr 200px;
+        gap: 25px;
     }
 
 }
@@ -1167,35 +1169,6 @@ footer {
         padding: 10px;
     }
 
-    /* Cooling loop */
-
-    .cooling-loop {
-        position: static;
-        max-width: none;
-        aspect-ratio: auto;
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-        padding: 30px 0 0;
-        margin-top: 30px;
-    }
-
-    .loop-diagram {
-        display: none;
-    }
-
-    .loop-item {
-        position: static;
-        transform: none;
-        width: auto;
-    }
-
-    .loop-cycle-note {
-        position: static;
-        transform: none;
-        margin-top: 5px;
-    }
-
     /* Components */
 
     .component {
@@ -1219,6 +1192,27 @@ footer {
 
     .component-info h3 {
         font-size: 1.7rem;
+    }
+
+    /* Implementation steps */
+
+    .impl-step {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        padding: 30px 0;
+    }
+
+    .impl-step-number {
+        order: 1;
+    }
+
+    .impl-step-image {
+        order: 2;
+        height: auto;
+    }
+
+    .impl-step-text {
+        order: 3;
     }
 
     /* Gallery */
