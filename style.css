@@ -674,7 +674,8 @@ footer {
     border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
-.project-hero-image img {
+.project-hero-image img,
+.project-hero-image video {
     width: 100%;
     height: auto;
     max-height: 420px;
@@ -773,7 +774,8 @@ footer {
     margin-bottom: 35px;
 }
 
-.system-diagram img {
+.system-diagram img,
+.system-diagram video {
     width: 100%;
     display: block;
     background: var(--panel-bg);
@@ -795,7 +797,8 @@ footer {
     margin-bottom: 40px;
 }
 
-.exploded-view img {
+.exploded-view img,
+.exploded-view video {
     padding: 20px;
 }
 
@@ -871,7 +874,8 @@ footer {
     border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
-.component-image img {
+.component-image img,
+.component-image video {
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -959,7 +963,8 @@ footer {
     margin-top: 50px;
 }
 
-.project-gallery img {
+.project-gallery img,
+.project-gallery video {
     width: 100%;
     height: 420px;
     object-fit: cover;
@@ -1029,7 +1034,8 @@ footer {
     border: 1px solid rgba(var(--border-rgb), 0.08);
 }
 
-.impl-step-image img {
+.impl-step-image img,
+.impl-step-image video {
     width: 100%;
     height: 100%;
     object-fit: contain;
